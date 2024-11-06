@@ -1,0 +1,10 @@
+<div>
+    <div>Hit Points
+    
+        <button>last</button><!--Options page-->
+        <button>next</button><!--Known Spells page-->
+    </div>
+    <div>information
+    
+    </div>
+</div>

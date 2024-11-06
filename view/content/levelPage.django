@@ -1,0 +1,10 @@
+<div>
+    <div>Level
+    
+        <button>last</button><!--background page-->
+        <button>next</button><!--class page-->
+    </div>
+    <div>information
+    
+    </div>
+</div>

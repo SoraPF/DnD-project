@@ -1,0 +1,10 @@
+<div>
+    <div>races
+    
+        <button>last</button><!--main page-->
+        <button>next</button><!--background page-->
+    </div>
+    <div>information
+    
+    </div>
+</div>

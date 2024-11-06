@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <div>
+        <p>Here you can create or autogenerate your character for D&D 5 </p>
+        <p>Same as character builder tool in aidedd.ord you you will have the possibility to print your Character sheet, to save your character locally in your machine in order to develop it later, or to save your Character sheet on our server.</p>
+        </div>
+        <div>
+            <button><!--race page-->
+                play button
+            </button>
+            
+        </div>
+    </div>
+    <div>
+        <p>Import the xml file for a character</p>
+        <input type="file">
+        <button>import</button>
+    </div>
+    <div>
+    <img/>
+    </div>
+<div>
