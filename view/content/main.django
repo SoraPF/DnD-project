@@ -1,22 +1,35 @@
-<div>
-    <div>
+<div class="flex">
+    <!-- Partie gauche -->
+    <div class="w-1/2 p-4">
         <div>
-        <p>Here you can create or autogenerate your character for D&D 5 </p>
-        <p>Same as character builder tool in aidedd.ord you you will have the possibility to print your Character sheet, to save your character locally in your machine in order to develop it later, or to save your Character sheet on our server.</p>
-        </div>
-        <div>
-            <button><!--race page-->
-                play button
-            </button>
+            <p>Here you can create or autogenerate your character for D&D 5 </p>
+            <p>Same as character builder tool in aidedd.org you will have the possibility to print your Character sheet, to save your character locally in your machine in order to develop it later, or to save your Character sheet on our server.</p>
             
+            <div class="flex justify-center h-screen">
+            <!-- race page -->
+            <a href="/races">
+            <button class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                <!-- Icône Play -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                </svg>
+            </button>
+            </a>
+            </div>
         </div>
     </div>
-    <div>
-        <p>Import the xml file for a character</p>
-        <input type="file">
-        <button>import</button>
+
+    <!-- Partie droite -->
+    <div class="w-1/2 p-4 flex justify-end">
+        <div>
+            <p>Import the XML file for a character</p>
+            <input type="file">
+            <button>Import</button>
+        </div>
     </div>
-    <div>
-    <img/>
-    </div>
-<div>
+</div>
+
+<!-- Image -->
+<div class="w-full p-4">
+    <img src="your-image-url.jpg" alt="Character Image" />
+</div>

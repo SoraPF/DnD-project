@@ -1,0 +1,10 @@
+<div>
+    <div>Equipment
+    
+        <button>last</button><!--Known Spells page-->
+        <button>next</button><!--Personnage page-->
+    </div>
+    <div>information
+    
+    </div>
+</div>

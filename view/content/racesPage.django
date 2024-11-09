@@ -1,10 +1,43 @@
-<div>
-    <div>races
-    
-        <button>last</button><!--main page-->
-        <button>next</button><!--background page-->
+<div class="flex min-h-screen bg-gray-100">
+
+    <!-- Partie gauche -->
+    <div class="w-1/2 p-6 flex flex-col items-center justify-between bg-white shadow-lg rounded-lg mx-4">
+        <h1 class="text-3xl font-bold text-gray-700 mb-6">Races</h1>
+
+        <!-- Liste des différentes races -->
+        <div class="flex-grow text-gray-600">
+            <p class="mb-4">Choose a race from the list to begin creating your character.</p>
+            <!-- Placeholder for race list -->
+            <div class="bg-gray-100 p-4 rounded-lg shadow-inner">
+                <p class="text-gray-500">Race list placeholder</p>
+            </div>
+        </div>
+
+        <!-- boutons en bas de la section gauche -->
+        <div class="space-x-4 flex mt-auto">
+            <button class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
     </div>
-    <div>information
-    
+
+    <!-- Partie droite -->
+    <div class="w-1/2 p-6 flex flex-col justify-start bg-white shadow-lg rounded-lg mx-4">
+        <h1 class="text-3xl font-bold text-gray-700 mb-6">Information</h1>
+        <div class="text-gray-600">
+            <p>Select a race to view detailed information about it.</p>
+            <div class="mt-4">
+                <!-- Informations supplémentaires sur la race -->
+                <p class="text-gray-500">Information placeholder</p>
+            </div>
+        </div>
     </div>
-</div>
+
+</div> 

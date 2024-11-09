@@ -2,6 +2,7 @@ package main
 
 import (
 	"DnD-project/config"
+	"DnD-project/router"
 	"fmt"
 	"log"
 
@@ -43,9 +44,7 @@ func main() {
     app.Static("/public","./public")
 
     // routes
-    app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Hello, Fiber!")
-    })
+    app.Mount("/", router.FrontdRoutes())
 
     log.Fatal(app.Listen(":3000"))
 }
