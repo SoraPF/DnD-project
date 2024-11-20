@@ -1,0 +1,3 @@
+{% include "layout/header.django"%}
+{% include "content/bgPage.django"%}
+{% include "layout/footer.django"%}

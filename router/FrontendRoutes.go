@@ -15,6 +15,19 @@ func FrontdRoutes() *fiber.App {
 			"Title":      "races",
 		})
 	})
+
+	router.Get("/background", func(c *fiber.Ctx) error {
+		return c.Render("pages/background", fiber.Map{
+			"Title":      "background",
+		})
+	})
+
+	router.Get("/level",func (c* fiber.Ctx) error {
+		return c.Render("pages/level",fiber.Map{
+			"Title": "level",
+		})
+	})
+
 /*
 
 	router.Route("/authent", func(router fiber.Router) {

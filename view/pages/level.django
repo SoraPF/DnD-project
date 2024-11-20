@@ -1,0 +1,3 @@
+{% include "layout/header.django"%}
+{% include "content/levelPage.django"%}
+{% include "layout/footer.django"%}
