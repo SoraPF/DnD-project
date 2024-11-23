@@ -1,3 +1,4 @@
+{% include "layout/function.django"%}
 <div class="flex min-h-screen bg-gray-100">
 
     <!-- Partie gauche -->
@@ -18,13 +19,11 @@
                 </svg>
             </button>
             </a>
-            <a href="/background">
-            <button class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition-all">
+            <button id="Next" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition-all" disabled>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
             </button>
-            </a>
         </div>
     </div>
 
@@ -61,6 +60,9 @@
                     // Ajout de l'événement onclick pour chaque bouton
                     button.onclick = function() {
                         fetchRaceDetails(race.name);
+                        //pour stocker la race en mémoire
+                        setCookie("Race",race.name,);
+                        unlockNext();
                     };
 
                     raceContainer.appendChild(button);
@@ -100,4 +102,15 @@
             }
         });
     }
+
+    const buttonNext = document.getElementById('Next');
+
+    function unlockNext() {
+        buttonNext.disabled = false;
+        buttonNext.setAttribute('aria-disabled', 'false');
+    }
+
+    buttonNext.addEventListener('click', function () {
+        window.location.href = '/background';
+    });
 </script>

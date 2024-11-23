@@ -1,0 +1,10 @@
+<script>
+
+function setCookie(name, value) {
+    const date = new Date();
+    date.setHours(date.getHours() + 5);
+    document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+}
+
+
+</script>
